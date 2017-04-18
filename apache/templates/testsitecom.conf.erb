@@ -1,0 +1,13 @@
+<VirtualHost *:80>
+
+	ServerName testsite.com
+	ServerAlias www.testsite.com
+
+	DocumentRoot /home/teppo/public_html/
+
+		<Directory /home/teppo/public_html/>
+			Require all granted
+		</Directory>
+
+</VirtualHost>
+
